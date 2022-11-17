@@ -1,8 +1,6 @@
-
 .table{
     text-align: center;
-    border: solid green;
-    background-color: darkseagreen;
+    border: solid;
     display: flex;
     flex-direction: column;
 }
@@ -12,13 +10,17 @@
     text-align: center;
     height: 99%;
     border: 5px solid #428bca;
-    
+    position: relative;
+    /*background-color: #428bca;*/
 }
 
 .trapecio {
-    border-right: 8rem solid white;
-    border-left: 8rem solid white;
+    border-right: 8rem solid transparent;
+    border-left: 8rem solid transparent;
     border-bottom: 44rem solid #428bca;
+    position: absolute;
+    width: 75%;
+    height: 0%;
 }
 
 
@@ -29,13 +31,6 @@
     border: 10px solid black;
 }
 
-.sobre{
-    
-    border: 10px transparent;
-    position: absolute;
-    top: 4%;
-    left: 10.5%;
-}
 
 .fila {
     display: flex;
@@ -44,10 +39,21 @@
     
 }
 
-.silla{
-    border: 10px solid black;
+.sillah{
+    border: 10px solid blue;
+    background-color: aqua;
     align-items: center;
     align-content: center;
     display: flex;
     justify-content: space-evenly;
 }
+
+.sillai{
+    background-color: chartreuse;
+    border: 10px solid blue;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
