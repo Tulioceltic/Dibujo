@@ -12,19 +12,25 @@
         </a>
     </div>
     <div class="contenedor">
-        <div class="trapecio"></div>
-        <div class="sobre">
-            <table>
-                {%for u in ordenf%}
-                    <tr>
-                    {%for i in u%}
-                        <td class="table">{{i}}</td>
+        <div class="cuadrado">
+            <div class="table">
+                <div class="trapecio">
+                    {%for u in ordenf%}
+                    <div class="fila" style="height:calc(690px/{{heif}});">
+                    {%for i,v in u.items()%}
+                        {%if v==True%}
+                            <div class="sillah" id="{{i}}" onclick="">{{i}}</div>
+                        {%endif%}
+                        {%if v==False%}
+                            <div class="sillai" id="{{i}}" onclick="">{{i}}</div>
+                        {%endif%}
                     {%endfor%}
-                    </tr>
+                    </div>
                 {%endfor%}
-            </table>
+            </div>
+            </div>
+            </div>
         </div>
-    </div>
     
 </body>
 </html>

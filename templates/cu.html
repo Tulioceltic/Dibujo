@@ -17,8 +17,13 @@
             <div class="table" id="here" >
                 {%for u in ordenf%}
                     <div class="fila" style="height:calc(690px/{{heif}});">
-                    {%for i in u%}
-                        <div class="silla" id="{{i}}" onclick="">{{i}}</div>
+                    {%for i,v in u.items()%}
+                        {%if v==True%}
+                            <div class="sillah" id="{{i}}" onclick="">{{i}}</div>
+                        {%endif%}
+                        {%if v==False%}
+                            <div class="sillai" id="{{i}}" onclick="">{{i}}</div>
+                        {%endif%}
                     {%endfor%}
                     </div>
                 {%endfor%}
