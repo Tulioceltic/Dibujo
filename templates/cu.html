@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link href="{{ url_for('static', filename='css/estilos.css') }}" rel="stylesheet" type="text/css">
+    <script src="{{ url_for('static', filename='css/enviar.js') }}"></script>
+	<title></title>
+</head>
+<body>
+    <div>
+        <a>
+            funciono?
+        </a>
+    </div>
+    <div class="contenedor">
+        <div class="cuadrado">
+            <div class="table" id="here" >
+                {%for u in ordenf%}
+                    <div class="fila" style="height:calc(690px/{{heif}});">
+                    {%for i in u%}
+                        <div class="silla" id="{{i}}" onclick="">{{i}}</div>
+                    {%endfor%}
+                    </div>
+                {%endfor%}
+                </div>
+        </div>
+    </div>
+   
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link href="{{ url_for('static', filename='css/estilos.css') }}" rel="stylesheet" type="text/css">
+	<title></title>
+</head>
+<body>
+    <div>
+        <a>
+            funciono?
+        </a>
+    </div>
+    <div class="contenedor">
+        <div class="trapecio"></div>
+        <div class="sobre">
+            <table>
+                {%for u in ordenf%}
+                    <tr>
+                    {%for i in u%}
+                        <td class="table">{{i}}</td>
+                    {%endfor%}
+                    </tr>
+                {%endfor%}
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>

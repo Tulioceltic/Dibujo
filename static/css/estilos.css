@@ -1,0 +1,53 @@
+
+.table{
+    text-align: center;
+    border: solid green;
+    background-color: darkseagreen;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cuadrado {
+    text-align: center;
+    height: 99%;
+    border: 5px solid #428bca;
+    
+}
+
+.trapecio {
+    border-right: 8rem solid white;
+    border-left: 8rem solid white;
+    border-bottom: 44rem solid #428bca;
+}
+
+
+.contenedor {
+    text-align: center;
+    width: 75%; 
+    height: 700px; 
+    border: 10px solid black;
+}
+
+.sobre{
+    
+    border: 10px transparent;
+    position: absolute;
+    top: 4%;
+    left: 10.5%;
+}
+
+.fila {
+    display: flex;
+    border: 0px solid red;
+    justify-content: space-evenly;
+    
+}
+
+.silla{
+    border: 10px solid black;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: space-evenly;
+}
