@@ -1,0 +1,73 @@
+*{
+    background-color: black;
+}
+
+.table{
+    text-align: center;
+    border: solid;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cuadrado {
+    text-align: center;
+    height: 99%;
+    border: 5px solid #428bca;
+    position: relative;
+}
+
+.trapecio {
+    border-right: 8rem solid transparent;
+    border-left: 8rem solid transparent;
+    border-bottom: 44rem solid gray;
+    position: absolute;
+    width: 75%;
+    height: 0%;
+}
+
+
+.contenedor {
+    text-align: center;
+    width: 75%; 
+    height: 700px; 
+    border: 10px solid black;
+}
+
+
+.fila {
+    display: flex;
+    border: 0px solid red;
+    justify-content: space-evenly;
+    background-color: gray;
+    
+}
+
+.sillah{
+    border: 3px solid white;
+    border-radius: 10%;
+    background-color: chartreuse;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: xx-large;
+}
+
+.sillah:hover{
+    background-color: blue;
+    border: 3px solid blueviolet;
+    border-radius: 10%;
+    color: white;
+}
+
+.sillai{
+    background-color: rgb(231, 8, 8);
+    border: 3px solid white;
+    border-radius: 10%;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: xx-large;
+}
+
